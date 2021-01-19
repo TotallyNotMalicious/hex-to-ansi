@@ -49,6 +49,6 @@ func main() {
 		return
 	}
 	output := fmt.Sprintf("38;5;%dm", toANSI(color.R, color.G, color.B))
-	fmt.Println("Color code: " + output)
+	fmt.Println("Color code:", output)
 	fmt.Printf("Example: \x1b[%vcolor\x1b[0m", output)
 }
